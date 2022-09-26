@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+.box {
+  background: url("../assets/vgbg.webp");
+  /* background-size: 100vw 100vh; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#score {
+  position: absolute;
+  top: 9px;
+  right: 150px;
+  font-size: 39px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+#board {
+  background: linear-gradient(
+    rgba(128, 244, 128, 0.715),
+    rgba(204, 240, 191, 0.495)
+  );
+  width: 90vmin;
+  height: 92vmin;
+  border: 3px solid rgba(3, 41, 2, 0.61);
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+.snake-head {
+  background: linear-gradient(red, rgb(83, 3, 3));
+  transform: (1.04);
+  border-radius: 9px;
+  border: 1px solid white;
+}
+.food {
+  background-color: yellow;
+  border-radius: 8px;
+}
+.snake {
+  background-color: rgb(112, 8, 8);
+  border-radius: 12px;
+  border: 1px solid white;
+}
